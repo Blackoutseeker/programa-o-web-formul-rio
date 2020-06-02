@@ -1,0 +1,131 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+body {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    flex-direction: column;
+}
+header {
+    height: 90px;
+    width: 100%;
+    background-color: #0066ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+}
+h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#true-form-area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.labeled {
+    position: absolute;
+    left: 20px;
+    font-size: 15pt;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.choices {
+    font-size: 15pt;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+input[type=email], input[type=password], input[type=text] {
+    font-size: 15pt;
+    width: 40%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: .3s;
+}
+input[type=email]:hover, input[type=password]:hover {
+    width: 45%;
+}
+input[type=email]:focus, input[type=password]:focus{
+    width: 50%;
+    border-color: #0066ff;
+}
+input[type=radio], input[type=checkbox] {
+    outline: none;
+}
+select {
+    height: 40px;
+    width: 35%;
+    background-color: transparent;
+    font-size: 15pt;
+    outline: none;
+    border: 2px solid #fff;
+    padding-left: 10px;
+}
+option {
+    background-color: #0066ff;
+}
+textarea {
+    background-color: transparent;
+    outline: none;
+    resize: none;
+}
+#modules {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.buttons {
+    height: 90%;
+    width: 120px;
+    background-color: transparent;
+    font-size: 15pt;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+#cadastrar:hover {
+    border-color: #0066ff;
+}
+#excluir:hover {
+    border-color: #f00;
+}
