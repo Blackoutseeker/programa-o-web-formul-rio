@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <title>Sistema de Gestão Acadêmica</title>
+        <meta charset="utf-8" >
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form>
+            <header>
+                <h2>Manutenção de usuários do sistema interno</h2>
+            </header>
+            <div id="true-form-area" >
+                <div id="section" >
+                    <label for="email" class="labeled" >Login</label>
+                    <input type="email" name="email" >
+                </div>
+                <div id="section" >
+                    <label for="senha" class="labeled" >Senha</label>
+                    <input type="password" >
+                </div>
+                <div id="section" >
+                    <label for="status" class="labeled" >Status</label>
+                    <select name="status" >
+                        <option selected value="inativo">Inativo</option>
+                        <option value="ativo">Ativo</option>
+                    </select>
+                </div>
+                <div id="section" >
+                    <label class="labeled" >Tipo</label>
+                    <input type="radio" name="tipo" value="tecnico" id="tecnico" >
+                    <label class="choices" for="tecnico" >Técnico</label>
+                    <input type="radio" name="tipo" value="professor" id="professor" >
+                    <label class="choices" for="professor" >Professor</label>
+                    <input type="radio" name="tipo" value="aluno" id="aluno" >
+                    <label class="choices" for="aluno" >Aluno</label>
+                </div>
+                <div id="section" >
+                    <label class="labeled" >Data Criação</label>
+                    <input type="text" name="creation" >
+                </div>
+                <div id="section" >
+                    <label class="labeled" >Perfil</label>
+                    <input type="radio" name="perfil" value="convidado" id="convidado" >
+                    <label class="choices" for="convidado">Convidado</label>
+                    <input type="radio" name="perfil" value="administrador" id="administrador" >
+                    <label class="choices" for="administrador">Administrador</label>
+                </div>
+                <div id="section" >
+                    <label for="email" class="labeled" >Observações</label>
+                    <textarea name="obs" id="obs" cols="30" rows="5" ></textarea>
+                </div>
+                <div id="section" >
+                    <label for="email" class="labeled" >Módulos</label>
+                    <div id="modules" >
+                        <input type="checkbox" name="modulos" value="compras" id="compras" >
+                        <label class="choices" for="compras">Compras</label>
+                        <input type="checkbox" name="modulos" value="biblioteca" id="biblioteca" >
+                        <label class="choices" for="biblioteca">Biblioteca</label>
+                        <input type="checkbox" name="modulos" value="academico" id="academico" >
+                        <label class="choices" for="academico">Acadêmico</label>
+                        <input type="checkbox" name="modulos" value="documentacao" id="documentacao" >
+                        <label class="choices" for="documentacao">Documentação</label>
+                        <input type="checkbox" name="modulos" value="recursos" id="recursos" >
+                        <label class="choices" for="recursos">Recursos Humanos</label>
+                    </div>
+                </div>
+                <div id="section" >
+                    <input class="buttons" type="submit" value="Cadastrar" id="cadastrar" >
+                    <input class="buttons" type="reset" value="Excluir" id="excluir" >
+                </div>
+            </div>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
